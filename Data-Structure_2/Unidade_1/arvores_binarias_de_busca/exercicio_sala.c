@@ -38,6 +38,9 @@ int main() {
   }
   printf("Pre Ordem: \n");
   preOrdem(raiz);
+  system("pause");
+  // posOrdem(raiz);
+  // inOrdem(raiz);
   printf("Altura da Raiz: %d\n", altura(raiz));
 }
 int maior(int a, int b) { return a > b ? a : b; }
