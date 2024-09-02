@@ -37,7 +37,6 @@ Na representação de heap como um vetor, cada nó tem uma posição que está d
 /
 2
 ⌋
-⌊i/2⌋.
 
 * O filho esquerdo de um nó na posição 
 𝑖 está na posição 
@@ -85,8 +84,11 @@ Passo 3: Continue trocando o nó com o maior de seus filhos até que a proprieda
 Suponha que você tenha uma max-heap com os elementos [95, 60, 78, 39, 28, 66, 70, 33] e deseja aumentar a prioridade do elemento 66 para 98.
 
 Passo 1: Aumente 66 para 98.
+
 Passo 2: Agora compare 98 com seu pai (78). Como 98 é maior, troque-os.
+
 Passo 3: Agora 98 está na posição onde estava 78, e 78 desceu. Compare 98 com o novo pai, 95. Como 98 é maior que 95, troque-os.
+
 Resultado: 98 agora é a raiz da heap, e a estrutura ainda obedece à propriedade de max-heap.
 Se fosse necessário diminuir a prioridade de 95 para 37, o processo seria análogo, mas trocando o nó 95 para baixo na árvore até que a propriedade do heap seja restabelecida.
 
