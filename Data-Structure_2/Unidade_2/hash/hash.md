@@ -107,3 +107,15 @@ Chave 23 colide com 13 no índice 3.
 Usando sondagem linear, o próximo índice verificado é 4, mas já está ocupado pela chave 44.
 
 O próximo índice livre é 5. Portanto, a chave 23 é armazenada no índice 5.
+
+Tabela hash após inserções:
+
+```
+Índice:  0  1  2  3  4  5  6  7  8  9
+Chave:   -  - 12 13 44 23  -  -  -  -
+
+```
+
+Conclusão
+
+As tabelas hash são uma estrutura de dados eficiente para armazenamento e recuperação de dados. A escolha da função hash e o método de tratamento de colisão são críticos para o desempenho. Ao aplicar funções hash apropriadas e métodos eficazes de tratamento de colisões, como sondagem ou encadeamento, as operações de busca, inserção e remoção podem ser mantidas em complexidade 𝑂(1) na maioria dos casos.
